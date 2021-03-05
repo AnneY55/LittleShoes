@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+ {% block body %}
+ <div class="row">
+	<h2> Contactez-nous</h2>
+</div>
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Votre adresse e-mail</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Votre question concerne</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Nos produits</option>
+      <option>Votre commande</option>
+      <option>La livraison</option>
+      <option>Votre paiement</option>
+      <option>Autres</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Votre souhait</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>déposer un avis</option>
+      <option>faire une réclamation</option>
+      <option>obtenir des informations</option>
+      <option>changer vos données personnelles</option>
+      <option>recevoir une newsletter</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Votre demande</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <hr>
+  <hr>
+  <button type="submit" class="btn btn-primary"><h5>Envoyer</h5></button>
+  <hr>
+  <hr>
+</form>
+	
+  
+	
+</div>
+{% endblock %} 

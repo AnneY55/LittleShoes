@@ -1,0 +1,56 @@
+body {
+	
+
+}
+/*h2,h4 {
+	text-align :left;
+}*/
+
+.row {
+padding-top: 200px;
+background-color: #708090;
+
+}
+.fhb {
+	padding-top:130px;
+}
+.encours {
+	padding-top:130px;
+}
+.shoes {
+	width :250px;
+	height :auto;
+}
+
+.form-floating {
+	padding-top:150px;
+}
+
+.description {
+	display :flex;
+	margin-bottom:50px;
+	color:#000000;
+}
+
+.detail{
+	margin-left:200px;
+	
+}
+.sr-only {
+	color:#000000;
+}
+footer{
+
+	height:80px !important;
+	align-items: center;
+}
+
+.d-flex{
+
+justify-content: space-between !important;
+margin-right: 25%;
+margin-left:25%;
+
+}
+
+

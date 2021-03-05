@@ -1,0 +1,52 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<div class="container">
+		<div class="row">
+
+    		
+    		    <div class="col-sm">
+    		    	<h2>{{product.name}}</h2>
+    		    	
+
+    		    <div class="description">	
+					<img src="{{ asset('images/' ~ product.image ~ '') }}" alt="{{product.name}} "class="article"/>
+						<div class="detail">
+							<h4> {{product.Description}}</h4>
+							<br>
+							<br>
+							<h4> {{product.Price}} €</h4>
+							<br>
+							<a class="btn btn-secondary btn-lg text-light bg-dark" href="#" role="button">Ajouter au panier </a>
+								<br>
+								<br>
+							{% if product.category == "Femme" %}
+								<button type="button" class="btn btn-outline-dark">35</button>
+								<button type="button" class="btn btn-outline-dark">36</button>
+								<button type="button" class="btn btn-outline-dark">37</button>
+								<button type="button" class="btn btn-outline-dark">38</button>
+								
+							{% elseif product.category == "Homme" %}
+								<button type="button" class="btn btn-outline-dark">39</button>
+								<button type="button" class="btn btn-outline-dark">40</button>
+								<button type="button" class="btn btn-outline-dark">41</button>
+								<button type="button" class="btn btn-outline-dark">42</button>
+
+							{% elseif product.category == "Baby" %}
+								<button type="button" class="btn btn-outline-dark">16</button>
+								<button type="button" class="btn btn-outline-dark">17</button>
+								<button type="button" class="btn btn-outline-dark">18</button>
+								<button type="button" class="btn btn-outline-dark">19</button>
+
+							{% endif %}								
+						</div>
+					</div>
+					</div> 
+
+			
+			
+      
+		</div>
+	</div>
+
+{% endblock %}
+

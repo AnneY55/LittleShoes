@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<div class="container">
+		<div class="row">
+    		
+      		{% for Product in product_list %}
+      			<div class="col-sm">
+					<h6>{{Product.name}}</h6>
+					<img src="{{ asset('images/' ~ Product.image ~ '') }}" alt="{{Product.name}} "class="shoes"/>
+				</div> 
+
+				
+			{% endfor %}
+      
+		</div>
+
+
+	</div>
+
+{% endblock %}

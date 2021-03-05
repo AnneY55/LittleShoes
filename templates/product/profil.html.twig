@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+ {% block body %}
+ <div class="container-fluid" style="margin-top:150px;"><h2 class="text-primary">Mon espace personnel</h2></div>
+ <select class="custom-select custom-select-lg mb-3">
+  <option selected>Ouvrir le menu déroulant</option>
+  <option value="1">Mes coordonnées personnelles</option>
+  <option value="2">Changer mes coordonnées personnelles</option>
+  
+</select>
+
+<select class="custom-select custom-select-sm">
+  <option selected>Ouvrir le menu déroulant</option>
+  <option value="1">Ma commande en cours</option>
+  <option value="2">Mes achats</option>
+  <option value="3">Mes factures</option>
+</select>
+{% endblock %} 

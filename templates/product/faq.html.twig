@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+ {% block body %}
+ 
+<div class="form-floating">
+  <select class="form-select form-select-sm"" id="floatingSelect" aria-label=".form-select-lg example">
+    <option selected>Ma question concerne</option>
+    <option value="1">Ma commande</option>
+    <option value="2">Ma livraison</option>
+    <option value="3">Ma facture</option>
+  </select>
+  <label for="floatingSelect">Works with selects</label>
+</div>
+
+{% endblock %} 
