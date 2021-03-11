@@ -1,45 +1,100 @@
 {% extends "base.html.twig" %}
  {% block body %}
- <div class="row">
-	<h2> Contactez-nous</h2>
-</div>
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Votre adresse e-mail</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Votre question concerne</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>Nos produits</option>
-      <option>Votre commande</option>
-      <option>La livraison</option>
-      <option>Votre paiement</option>
-      <option>Autres</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Votre souhait</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-      <option>déposer un avis</option>
-      <option>faire une réclamation</option>
-      <option>obtenir des informations</option>
-      <option>changer vos données personnelles</option>
-      <option>recevoir une newsletter</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Votre demande</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  <hr>
-  <hr>
-  <button type="submit" class="btn btn-primary"><h5>Envoyer</h5></button>
-  <hr>
-  <hr>
-</form>
-	
-  
-	
-</div>
+  <!DOCTYPE html>
+ <html>
+    <head>
+        <title><h1>Formulaire Contact Little Shoes</h1></title>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     </head>
+     <body>
+         <div class="formulaires">
+             <h1>Formulaire de contact Little Shoes</h1>
+             <br>
+             <form>
+               <fieldset>
+                 {# <legend>Exemple de formulaire Bootstrap</legend> #}
+                 
+                 <div class="form-group">
+                   <label for="nom"><h4>Entrer votre nom</h4></label>
+                   <input type="text" class="form-control" id="nom" placeholder="Séverine DELAMAISONBLANCHE">
+                 </div>
+                 
+                 <div class="form-group">
+                   <label for="email"><h4>Entrer votre mail</h4></label>
+                   <input type="email" class="form-control" id="email" placeholder="prénom.nom@gmail.com">
+                 </div>
+                 
+                 <div class="form-group">
+                   <label for="selection"><h4>Ma demande concerne</h4></label>
+                   <select id="selection" class="form-control">
+                     <option value="">Liste de choix...</option>
+                     <optgroup label="Mon compte">
+                       <option value="">Ma commande</option>
+                       <option value="">Ma livraison</option>
+                       <option value="">Ma facture</option>
+                     </optgroup>
+                     <optgroup label="Les produits Little Shoes">
+                       <option value="">Les chaussures Femme</option>
+                       <option value="">Les chaussures Homme</option>
+                       <option value="">Les chaussures Bébé</option>
+                     </optgroup>
+                   </select>
+                 </div>
+                 <div class="form-group">
+                   <label for="bio"><h4>Votre message</h4></label>
+                   <textarea class="form-control" id="bio" rows="3"></textarea>
+                 </div>
+               </fieldset>
+             </form>
+             <br>
+             <br>
+             <br>
+             <br>
+         </div>
+    </body>
+</html>
+
 {% endblock %} 
+
+{# Exemples BOOTSTRAP}
+<div class="row"> 
+   <h2> Contactez-nous</h2>
+</div>
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Votre adresse e-mail</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Votre question concerne</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Nos produits</option>
+            <option>Votre commande</option>
+            <option>La livraison</option>
+            <option>Votre paiement</option>
+            <option>Autres</option>
+          </select>
+    </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Votre souhait</label>
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>déposer un avis</option>
+            <option>faire une réclamation</option>
+            <option>obtenir des informations</option>
+            <option>changer vos données personnelles</option>
+            <option>recevoir une newsletter</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Votre demande</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+          <hr>
+          <hr>
+        <button type="submit" class="btn btn-primary"><h5>Envoyer</h5></button>
+          <hr>
+          <hr>
+  </form>
+</div>
+#}

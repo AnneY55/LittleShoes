@@ -1,6 +1,52 @@
 {% extends "base.html.twig" %}
 {% block body %}
-	<div class="container-fluid" style="margin-top:150px;"><h2 class="text-primary">J'ai un compte client</h2></div>
+  <div class="container-fluid" style="margin-top:150px;"><h3>Je crée mon compte client</h3></div>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Mot de passe</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Adresse</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="25 rue de Paris">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Complément d'adresse</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Appartement, étage,...">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Ville</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+        </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Code Postal</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        <h6>En cochant cette case, je reconnais avoir pris connaissance des Conditions Générales d'Utilisation du site ainsi que sa Politique de Confidentialité et je les accepte. </h6>
+      </label>
+    </div>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary"><h4>Inscription</h4></button>
+  <hr>
+  <hr>
+  {% endblock %}
+  {# 
+	<div class="container-fluid" style="margin-top:150px;"><h2 class="text-primary">J'ai un compte client</h2></div> 
 <form>
   <div class="form-group row">
     <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
@@ -90,6 +136,7 @@
   <hr>
   <hr>
 </form>
+ #}
 
 
-{% endblock %}
+

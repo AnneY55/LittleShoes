@@ -2,15 +2,11 @@
 {% block body %}
 	<div class="container">
 		<div class="row">
-
-    		
-    		    <div class="col-sm">
-    		    	<h2>{{product.name}}</h2>
-    		    	
-
-    		    <div class="description">	
-					<img src="{{ asset('images/' ~ product.image ~ '') }}" alt="{{product.name}} "class="article"/>
-						<div class="detail">
+  		    <div class="col-sm">
+    		    <h2>{{product.name}}</h2>
+    		        <div class="description">	
+						<img src="{{ asset('images/' ~ product.image ~ '') }}" alt="{{product.name}} "class="article"/>
+							<div class="detail">
 							<h4> {{product.Description}}</h4>
 							<br>
 							<br>
@@ -41,11 +37,7 @@
 						</div>
 					</div>
 					</div> 
-
-			
-			
-      
-		</div>
+    	</div>
 	</div>
 
 {% endblock %}

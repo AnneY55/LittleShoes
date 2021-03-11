@@ -5,19 +5,20 @@
   </head>
   <body class="bg-light">
     
-<div class="container" style="margin-top:100px;">
+<div class="container">
   <main>
-    <div class="py-5 text-center">
-            <h2>Mon récapitulatif de commande</h2>
-      <p class="lead"><h3>Little Shoes est toujours à votre service !</h3></p>
+    {# <div class="py-5 text-center">
+            <h4>Mon récapitulatif de commande</h4>
+      <p class="lead"><h4>Little Shoes est toujours à votre service !</h4></p>
     </div>
+     #}
 
     <div class="row g-3">
       <div class="col-md-5 col-lg-4 order-md-last">
-        <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="d-flex justify-content-between align-items-center mb-3">
           <span class="text">Votre panier</span>
           <span class="badge bg-secondary rounded-pill"></span>
-        </h4>
+        </h3>
         <ul class="list-group mb-3">
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
@@ -80,17 +81,7 @@
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="username" class="form-label">Username</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
-              <div class="invalid-feedback">
-                  Your username is required.
-                </div>
-              </div>
-            </div>
-
+            
             <div class="col-12">
               <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
               <input type="email" class="form-control" id="email" placeholder="you@example.com">
@@ -214,12 +205,8 @@
   </main>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2017–2021 Little Shoes</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Confidentialité</a></li>
-      <li class="list-inline-item"><a href="#">Conditions</a></li>
-      <li class="list-inline-item"><a href="#">Service après-vente</a></li>
-    </ul>
+    <p class="mb-1">&copy; 2021 Little Shoes</p>
+    
   </footer>
 </div>
 {% endblock %} 
