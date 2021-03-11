@@ -1,6 +1,6 @@
 .row {
-padding-top: 200px;
-background-color: #708090;
+	padding-top: 200px;
+	background-color: #708090;
 
 }
 .fhb {
@@ -39,19 +39,21 @@ footer{
 
 .d-flex{
 
-justify-content: space-between !important;
-margin-right: 25%;
-margin-left:25%;
+	justify-content: space-between !important;
+	margin-right: 25%;
+	margin-left:25%;
 
 }
 
 .formulaires {
-margin-top : 200px;
+	margin-top : 200px;
 	display :flex-box;
 }
 .form-check-input {
 	width :30px;
 	height: 30px;
 }
-
+.faq{
+	margin-top : 150px;
+}
 
