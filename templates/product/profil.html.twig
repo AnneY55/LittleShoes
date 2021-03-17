@@ -1,17 +1,27 @@
 {% extends "base.html.twig" %}
  {% block body %}
- <div class="container-fluid" style="margin-top:150px;"><h2 class="text-primary">Mon espace personnel</h2></div>
- <select class="custom-select custom-select-lg mb-3">
-  <option selected>Ouvrir le menu déroulant</option>
-  <option value="1">Mes coordonnées personnelles</option>
-  <option value="2">Changer mes coordonnées personnelles</option>
-  
-</select>
+<br>
+<div class="row">
+  <div class="container-fluid" style="margin-top:150px;"><h2 class="text-white">Mon espace Little Shoes</h2>
+ 
+    <select class="custom-select custom-select-sm">
+      <option selected>MES INFORMATIONS PERSONNELLES </option>
+      <option value="1">Mon mot de passe</option>
+      <option value="2">Changer mon mot de passe</option>
+      <option value="3">Mes coordonnées</option>
+      <option value="4">Changer mes coordonnées</option>
+    </select>
 
-<select class="custom-select custom-select-sm">
-  <option selected>Ouvrir le menu déroulant</option>
-  <option value="1">Ma commande en cours</option>
-  <option value="2">Mes achats</option>
-  <option value="3">Mes factures</option>
-</select>
+    <select class="custom-select custom-select-lg mb-3"> 
+      <option selected>MES COMMANDES</option>
+      <option value="5">Ma dernière commande en cours</option>
+      <option value="5">Suivi de livraison</option>
+      <option value="6">Mes commandes</option>
+      <option value="7">Mes factures</option>
+    </select>
+        
+</div>
+</div>
+ <br>
+ <br>
 {% endblock %} 

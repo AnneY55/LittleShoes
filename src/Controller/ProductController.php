@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\ProductShoes;
 
@@ -65,6 +67,20 @@ class ProductController extends AbstractController
      */
     public function panier() 
     {
+
+            return $this->render('product/panier.html.twig');
+    }
+    /**
+     * @Route("/product/panier/add{id}", name="panier_add")
+     */
+    public function add($id,Request $request) 
+    {
+            $session = $request->getSession();
+
+            $panier = $request->get('panier',[]);
+
+            $panier[$id] = 1;
+
             return $this->render('product/panier.html.twig');
     }
     /**
@@ -102,7 +118,6 @@ class ProductController extends AbstractController
     public function carrousel() 
     {
          return $this->render('product/carrousel.html.twig');
-            
     }
     /**
      * @Route("/product/category/{category_name}", name="category")

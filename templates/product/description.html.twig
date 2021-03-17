@@ -12,7 +12,7 @@
 							<br>
 							<h4> {{product.Price}} €</h4>
 							<br>
-							<a class="btn btn-secondary btn-lg text-light bg-dark" href="#" role="button">Ajouter au panier </a>
+							<a class="btn btn-secondary btn-lg text-light bg-dark" href="{{ path('panier_add',{'id':product.id})}}" role="button">Ajouter au panier </a>
 								<br>
 								<br>
 							{% if product.category == "Femme" %}

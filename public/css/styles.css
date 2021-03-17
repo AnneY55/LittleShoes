@@ -1,5 +1,5 @@
 .row {
-	padding-top: 200px;
+	padding-top: 150px;
 	background-color: #708090;
 
 }
@@ -36,24 +36,27 @@ footer{
 	height:80px !important;
 	align-items: center;
 }
-
 .d-flex{
 
 	justify-content: space-between !important;
 	margin-right: 25%;
 	margin-left:25%;
-
 }
-
 .formulaires {
-	margin-top : 200px;
-	display :flex-box;
-}
+	margin-top : 150px;
+	
+ }
 .form-check-input {
 	width :30px;
 	height: 30px;
 }
+.jumbotron-heading : {
+	padding-top : 400px;
+}
 .faq{
 	margin-top : 150px;
 }
-
+.order-container {
+	padding-top: 200px
+}
+	
