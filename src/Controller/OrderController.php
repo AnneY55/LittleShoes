@@ -19,21 +19,23 @@ class OrderController extends AbstractController
     {
         $panier = $session->get('panier', []);
         $panierWithData = [];
+
         foreach($panier as $id => $quantity) {
             $panierWithData[] = [ 
                 'product' => $productShoesRepository->find($id),
                 'quantity' => $quantity
-
             ];
         }
+
         $total = 0;
+        
         foreach($panierWithData as $item) {
-            $totalItem = $item['product']->getPrix() * $item['quantity'];
+            $totalItem = $item['product']->getPrice() * $item['quantity'];
             $total += $totalItem;
         }
         return $this->render('order/index.html.twig', [
             'items' => $panierWithData,
-            'total' => $total,
+            'total' => $total
         ]);
     }
 
@@ -45,34 +47,34 @@ class OrderController extends AbstractController
  
         $panier = $session->get('panier', []);
 
-        if( !empty($panier[$id])) {
+        if(!empty($panier[$id])) {
             $panier[$id]++;
-        } else {
+        } 
+
+        else {
             $panier[$id] = 1;
         }
         
         $session->set('panier', $panier);
-        return $this->redirectToRoute("order_index");
+        return $this->redirectToRoute("order");
      
      }
     
     /**
      * @Route("/order/remove/{id}", name="order_remove")
      */
-    public function remove($id, SessionInterface $session){
+    public function remove($id, SessionInterface $session) {
         $panier = $session->get('panier', []);
+
         if(!empty($panier[$id])) {
             unset($panier[$id]);
         }
 
          $session->set('panier', $panier);
-         return $this->redirectToRoute("order_index");
+         return $this->redirectToRoute("order");
         }
     
 }
 
 
 
-/**
-     * @Route("/product", name="order")
-     */

@@ -7,12 +7,13 @@
     		        <div class="description">	
 						<img src="{{ asset('images/' ~ product.image ~ '') }}" alt="{{product.name}} "class="article"/>
 							<div class="detail">
-							<h4> {{product.Description}}</h4>
+							<h5> {{product.Description}}</h5>
 							<br>
 							<br>
 							<h4> {{product.Price}} €</h4>
 							<br>
-							<a class="btn btn-secondary btn-lg text-light bg-dark" href="{{ path('panier_add',{'id':product.id})}}" role="button">Ajouter au panier </a>
+							{# <a href="{{ path('order_add',{'id': product.id}) }} role="button">Ajouter au panier</a> #}
+							<a class="btn btn-secondary btn-lg text-light bg-dark" href="{{ path('order_add',{'id':product.id})}}" role="button">Ajouter au panier </a>
 								<br>
 								<br>
 							{% if product.category == "Femme" %}
