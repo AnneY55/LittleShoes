@@ -35,13 +35,6 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/product/inscription", name="inscription")
-     */
-    public function inscription() 
-    {
-            return $this->render('product/inscription.html.twig');
-    }
-    /**
      * @Route("/product/contact", name="contact")
      */
     public function contact() 
