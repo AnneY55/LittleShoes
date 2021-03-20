@@ -1,11 +1,19 @@
+.shoes {
+	width :150px;
+	height :auto;
+
+}
 .row {
 	padding-top: 150px;
 	background-color: #708090;
 
 }
+.detail {
+	margin-left:50px;
+}
 
 .description {
-	display :flex;
+	display:flex;
 	margin-bottom:50px;
 	color:#000000;
 }
