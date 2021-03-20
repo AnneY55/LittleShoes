@@ -3,20 +3,6 @@
 	background-color: #708090;
 
 }
-.fhb {
-	padding-top:130px;
-}
-.encours {
-	padding-top:130px;
-}
-.shoes {
-	width :250px;
-	height :auto;
-}
-
-.form-floating {
-	padding-top:150px;
-}
 
 .description {
 	display :flex;
@@ -24,41 +10,24 @@
 	color:#000000;
 }
 
-.detail{
-	margin-left:200px;
-	
-}
-.sr-only {
-	color:#000000;
-}
-footer{
-
-	height:80px !important;
-	align-items: center;
-}
-.d-flex{
-
-	justify-content: space-between !important;
-	margin-right: 25%;
-	margin-left:25%;
-}
 .formulaires {
 	margin-top : 150px;
 	
  }
+
 .form-check-input {
 	width :30px;
 	height: 30px;
 }
-.jumbotron-heading : {
-	padding-top : 400px;
-}
-.faq{
+
+.faq {
 	margin-top : 150px;
 }
+
 .order-container {
 	padding-top: 200px
 }
+
 .registration {
 	padding-top:200px;
 	background-color:  #708090;
